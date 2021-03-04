@@ -361,27 +361,27 @@ class _CartPage extends State<CartPage> {
                     ),
                     fit: BoxFit.cover)),
           ),
-          Counter(
-            color: Colors.white,
-            textStyle: TextStyle(
-                fontFamily: 'Poppins',
-                color: buddiesPurple,
-                fontSize: screenAwareSize(14, context)),
-            buttonSize: screenAwareSize(20, context),
-            // heroTagDecrease: '${cart.orders}+2 ${'cart.productName'}'[i],
-            // heroTagIncrease: '${cart.dispensaryId}+ 3${'cart.orders'}'[i],
-            minValue: 1,
-            maxValue: 10,
-            step: 1,
-            decimalPlaces: 0,
-            initialValue: userCart.orderDetails[i].quantity,
-            onChanged: (num val) {
-              setState(() {
-                userCart.orderDetails[i].quantity = val;
-                getCartTotal();
-              });
-            },
-          ),
+          // Counter(
+          //   color: Colors.white,
+          //   textStyle: TextStyle(
+          //       fontFamily: 'Poppins',
+          //       color: buddiesPurple,
+          //       fontSize: screenAwareSize(14, context)),
+          //   buttonSize: screenAwareSize(20, context),
+          //   // heroTagDecrease: '${cart.orders}+2 ${'cart.productName'}'[i],
+          //   // heroTagIncrease: '${cart.dispensaryId}+ 3${'cart.orders'}'[i],
+          //   minValue: 1,
+          //   maxValue: 10,
+          //   step: 1,
+          //   decimalPlaces: 0,
+          //   initialValue: userCart.orderDetails[i].quantity,
+          //   onChanged: (num val) {
+          //     setState(() {
+          //       userCart.orderDetails[i].quantity = val;
+          //       getCartTotal();
+          //     });
+          //   },
+          // ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[

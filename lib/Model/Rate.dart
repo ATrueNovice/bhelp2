@@ -119,7 +119,7 @@ class Rate {
 
 class ShippingAmount {
   String currency;
-  int amount;
+  double amount;
 
   ShippingAmount({this.currency, this.amount});
 

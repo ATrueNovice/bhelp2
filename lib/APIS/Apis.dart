@@ -875,17 +875,31 @@ Future getShippingRate(dispensary, order) async {
   };
 
   await http.post(url, body: json.encode(orderRating), headers: {
-    "Content-Type": "application/x-www-form-urlencoded"
+    "Content-Type": "application/json"
   }).then((http.Response response) {
     switch (response.statusCode) {
       case (200):
         var responseData = json.decode(response.body);
-        Rate rateData =
-            Rate.fromJson((responseData[1]['rate_response']['rates']));
+        if (responseData.length >= 2) {
+          print('dd');
+          print(responseData[1]['rate_response']['rates']
+              .where((element) =>
+             // element['carrier_delivery_days'] == 2 &&
+              element['package_type'] == 'medium_flat_rate_box').first);
+              // [].where((element) =>
+              // element['carrier_delivery_days'] == 2 &&
+              // element['package_type'] == 'medium_flat_rate_box')
+          //    responseData[1]
+          Rate rateData =
+              Rate.fromJson(responseData[1]['rate_response']['rates']
+              .where((element) =>
+             // element['carrier_delivery_days'] == 2 &&
+              element['package_type'] == 'medium_flat_rate_box').first);
 
-        print('uploaded successfully');
-        print(rateData.carrierId);
-
+          print('uploaded successfully-----');
+          print(rateData);
+          print(rateData.carrierId);
+        }
         break;
 
       case (400):
@@ -893,6 +907,8 @@ Future getShippingRate(dispensary, order) async {
 
         break;
       case (500):
+        print(response.body);
+        print(json.encode(orderRating));
         print('Failed Upload');
         isUploaded = false;
 
@@ -901,8 +917,6 @@ Future getShippingRate(dispensary, order) async {
         print('Unable to get rates');
     }
   });
-
-  print('uploaded successfully');
 }
 
 Future getSquarePayments() async {

@@ -285,18 +285,21 @@ class _CheckoutState extends State<Checkout> {
     }
   }
 
+//one sec , let me change my mic,
+// request for permission to control my screen so you can test
   @override
   void initState() {
-    _profileCheck();//xz
-      WidgetsBinding.instance.addPostFrameCallback((_) async {
-          cartCheck();//xy
-    _getRate();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      _profileCheck(); //xz
 
+      cartCheck(); //xy
+      _getRate();
+      _getZip(); //xz
+      _totalNumber = cartTotal;
+      _getShippingIndicator();
+      _totalCart();
     });
-    _getZip();//xz
-    _totalNumber = cartTotal;
-    _getShippingIndicator();
-    _totalCart();
+
     super.initState();
   }
 
@@ -743,6 +746,8 @@ class _CheckoutState extends State<Checkout> {
     });
   }
 
+  //CoupoN CALCULATION
+
   void _applyCoupon(couponData) {
     bool matchingCategories = false;
     bool matchingProducts = false;
@@ -768,8 +773,10 @@ class _CheckoutState extends State<Checkout> {
               userCart.orderDetails[i].price * (couponData.amount);
           print(_totalNumber);
         });
-        _totalCart();
-
+        // _totalCart();
+        _getRate();
+        getCartTotal();
+        updateCartTotal(couponData.amount, i);
         // updateCartTotal(couponData.amount, i);
         // updateCartTotal(cart[i].price, i);
       } else {
@@ -791,8 +798,8 @@ class _CheckoutState extends State<Checkout> {
         });
         _totalCart();
 
-        // getCartTotal();
-        // updateCartTotal(couponData.amount, i);
+        getCartTotal();
+        updateCartTotal(couponData.amount, i);
       } else {
         print('No matching product id');
       }
@@ -802,6 +809,7 @@ class _CheckoutState extends State<Checkout> {
 
   void getCartTotal() {
     final cart = CartProvider.of(context);
+    print('ff');
     if (userCart != null) {
       cartTotal = 0;
 

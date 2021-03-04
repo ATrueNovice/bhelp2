@@ -167,42 +167,42 @@ class _ProductScreenTopPartState extends State<ProductScreenTopPart> {
               ),
             ],
           ),
-          Positioned(
-              bottom: screenAwareSize(20, context),
-              left: screenAwareSize(5, context),
-              child: FloatingActionButton(
-                heroTag: "btn1",
-                backgroundColor: buttonColor,
-                child: Icon(
-                  FontAwesomeIcons.heart,
-                  color: Colors.white,
-                  size: screenAwareSize(20, context),
-                ),
-                mini: true,
-                onPressed: () {
-                  _likedProduct(product);
-                },
-              )),
-          Positioned(
-            bottom: screenAwareSize(15, context),
-            right: screenAwareSize(5, context),
-            child: FloatingActionButton(
-              heroTag: "btn2d",
-              backgroundColor: buddiesGreen.withOpacity(.7),
-              child: Icon(
-                FontAwesomeIcons.share,
-                color: Colors.white,
-              ),
-              mini: true,
-              onPressed: () {
-                final RenderBox box = context.findRenderObject();
-                Share.share(shareSubject,
-                    subject: 'I Want This' + product.name + 'From Buddies!',
-                    sharePositionOrigin:
-                        box.localToGlobal(Offset.zero) & box.size);
-              },
-            ),
-          ),
+          // Positioned(
+          //     bottom: screenAwareSize(20, context),
+          //     left: screenAwareSize(5, context),
+          //     child: FloatingActionButton(
+          //       heroTag: "btn1",
+          //       backgroundColor: buttonColor,
+          //       child: Icon(
+          //         FontAwesomeIcons.heart,
+          //         color: Colors.white,
+          //         size: screenAwareSize(20, context),
+          //       ),
+          //       mini: true,
+          //       onPressed: () {
+          //         _likedProduct(product);
+          //       },
+          //     )),
+          // Positioned(
+          //   bottom: screenAwareSize(15, context),
+          //   right: screenAwareSize(5, context),
+          //   child: FloatingActionButton(
+          //     heroTag: "btn2d",
+          //     backgroundColor: buddiesGreen.withOpacity(.7),
+          //     child: Icon(
+          //       FontAwesomeIcons.share,
+          //       color: Colors.white,
+          //     ),
+          //     mini: true,
+          //     onPressed: () {
+          //       final RenderBox box = context.findRenderObject();
+          //       Share.share(shareSubject,
+          //           subject: 'I Want This' + product.name + 'From Buddies!',
+          //           sharePositionOrigin:
+          //               box.localToGlobal(Offset.zero) & box.size);
+          //    },
+          //  ),
+        //  ),
         ],
       ),
     );
@@ -655,29 +655,29 @@ class _ProductScreenBottomPartState extends State<ProductScreenBottomPart> {
                 SizedBox(
                   height: 10.0,
                 ),
-                Center(
-                  child: Counter(
-                    color: Colors.white,
-                    textStyle: TextStyle(
-                        fontFamily: 'Poppins',
-                        color: buddiesPurple,
-                        fontSize: screenAwareSize(30, context)),
-                    buttonSize: screenAwareSize(40, context),
+            //    Center(
+                //   child: Counter(
+                //     color: Colors.white,
+                //     textStyle: TextStyle(
+                //         fontFamily: 'Poppins',
+                //         color: buddiesPurple,
+                //         fontSize: screenAwareSize(30, context)),
+                //     buttonSize: screenAwareSize(40, context),
 
-                    // increase: '${widget.product.image}1',
-                    // decrease: '${widget.product.image2}2',
-                    minValue: 1,
-                    maxValue: 10,
-                    step: 1,
-                    decimalPlaces: 0,
-                    initialValue: cartVal,
-                    onChanged: (num val) {
-                      setState(() {
-                        cartVal = val;
-                      });
-                    },
-                  ),
-                ),
+                //     increase: '${widget.product.image}1',
+                //    decrease: '${widget.product.image2}2',
+                //     minValue: 1,
+                //     maxValue: 10,
+                //     step: 1,
+                //     decimalPlaces: 0,
+                //     initialValue: cartVal,
+                //     onChanged: (num val) {
+                //       setState(() {
+                //         cartVal = val;
+                //       });
+                //     },
+                //   ),
+                // ),
               ],
             ),
             SizedBox(
