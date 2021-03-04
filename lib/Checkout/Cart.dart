@@ -40,7 +40,8 @@ class _CartPage extends State<CartPage> {
   double rating = 4.5;
 
   void getCartTotal() {
-    final cart = CartProvider.of(context);
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+          final cart = CartProvider.of(context);
     if (userCart != null) {
       cartTotal = 0;
 
@@ -54,6 +55,8 @@ class _CartPage extends State<CartPage> {
         minReached(cartTotal);
       }
     }
+    });
+
     // checkCart(cartTotal);
   }
 

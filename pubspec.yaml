@@ -59,6 +59,8 @@ dependencies:
   cached_network_image: ^2.5.0
   uuid: 
   flutter_google_places: ^0.2.4
+  provider: ^4.3.2+3
+
 
 
 

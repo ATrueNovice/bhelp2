@@ -144,7 +144,10 @@ class _DispensaryHome extends State<DispensaryHome>
 
     _tabController = new TabController(vsync: this, length: 4);
     _tabController.addListener(_handleTabSelection);
-    CartProvider.of(context).dispensary = dispensary;
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+         CartProvider.of(context).dispensary = dispensary;
+
+    });
 
     _getShippingIndicator(dispensary.shippingMethod);
     getCurrentDate();

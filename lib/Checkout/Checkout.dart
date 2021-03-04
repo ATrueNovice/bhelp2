@@ -287,12 +287,15 @@ class _CheckoutState extends State<Checkout> {
 
   @override
   void initState() {
-    _profileCheck();
-    cartCheck();
-    _getZip();
+    _profileCheck();//xz
+      WidgetsBinding.instance.addPostFrameCallback((_) async {
+          cartCheck();//xy
+    _getRate();
+
+    });
+    _getZip();//xz
     _totalNumber = cartTotal;
     _getShippingIndicator();
-    _getRate();
     _totalCart();
     super.initState();
   }
