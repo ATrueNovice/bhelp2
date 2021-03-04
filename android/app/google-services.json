@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "810224248041",
+    "firebase_url": "https://buddiesapp-222122.firebaseio.com",
+    "project_id": "buddiesapp-222122",
+    "storage_bucket": "buddiesapp-222122.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810224248041:android:de6aaaa1489074712b7c78",
+        "android_client_info": {
+          "package_name": "com.buddies.hsi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810224248041-ehkgh87s8ldpu0dhnivuimjda4mkne2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4YHD_kzQ42Bjhzc09oLwauTUqbPCcTy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810224248041-aa3unr9m55d2qghi97fl78ih2g1grljm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "810224248041-l3fes63ol4860oj9d4lb4j60ddstsl4e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hscottindustries.bv3"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

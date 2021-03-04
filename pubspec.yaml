@@ -1,0 +1,230 @@
+name: Buddies 
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.2.0 <3.0.0"
+
+dependencies:
+  flutter_facebook_login: 
+  http: ^0.12.0+2
+  json_annotation: ^3.0.0
+  shared_preferences: ^0.5.7
+  datetime_picker_formfield: ^0.1.8
+  image_picker: 0.6.0+1
+  image_cropper: ^1.0.1
+  path: any
+  transparent_image: ^1.0.0
+  clippy_flutter: ^1.1.0
+  gradient_bottom_navigation_bar: ^1.0.0+4
+  google_sign_in: 
+  firebase_auth: ^0.16.0
+  rxdart: ^0.24.0
+  font_awesome_flutter: ^8.8.1
+  bubble_bottom_bar: ^1.2.0
+  flutter_rating: ^0.0.2
+  sticky_headers: ^0.1.7
+  google_maps_flutter: ^0.5.27
+  geolocator: ^5.1.1+1
+  google_maps_webservice: ^0.0.16
+  geocoder: ^0.2.1
+  source_gen: ^0.9.5
+  flutter_counter: ^1.0.3
+  share: ^0.6.4
+  carousel_pro: ^1.0.0
+  dropdown_menu: ^1.1.1
+  flutter_flip_view: ^1.0.3
+  permission_handler: ^3.0.1
+  giffy_dialog: ^1.7.0
+  autocomplete_textfield: ^1.6.4
+  flutter_speed_dial: ^1.2.5
+  catcher: ^0.3.4
+  intl: ^0.15.8
+  url_launcher: ^5.4.5
+  email_launcher: ^1.0.0
+  js: ^0.6.0
+  universal_html: ^1.2.3
+  square_in_app_payments:
+  cached_network_image: ^2.5.0
+  uuid: 
+  flutter_google_places: ^0.2.4
+
+
+
+
+
+
+  flutter:
+    sdk: flutter
+  flutter_auth_buttons: ^0.3.1
+
+
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^1.0.0
+  json_serializable: ^3.2.0
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+
+  assets:
+    - assets/facebook.png
+    - assets/Background.jpg
+    - assets/HSI.png
+    - assets/twitter.png
+    - assets/orange.jpg
+    - assets/half.jpg
+    - assets/bg1.jpg
+    - assets/accessories.jpg
+    - assets/relax1.jpg
+    - assets/prod1.png
+    - assets/prod2.png
+    - assets/prod3.jpg
+    - assets/prod4.png
+    - assets/prod5.png
+    - assets/prod6.jpg
+    - assets/productivity.jpg
+    - assets/whoopi.jpeg
+    - assets/cape.jpg
+    - assets/topical.png
+    - assets/prod6.jpg
+    - assets/hip.png
+    - assets/Happy.png
+    - assets/Electric.png
+    - assets/gummies.jpg
+    - assets/vaper.jpg
+    - assets/vib.png
+    - assets/cool.png
+    - assets/Dream.jpg
+    - assets/buddys.jpg
+    - assets/cookies.jpg
+    - assets/delta9.jpg
+    - assets/holistic.jpg
+    - assets/housedank.jpg
+    - assets/open.jpg
+    - assets/openLeaf.jpeg
+    - assets/openMedical.jpg
+    - assets/google.png
+    - assets/g.jpg
+    - assets/fbIcon.png
+    - assets/googleIcon.png
+    - assets/cbd.png
+    - assets/cbddate.jpeg
+    - assets/cbdYoga.jpeg
+    - assets/vpe.jpg
+    - assets/chocolate.jpg
+    - assets/budrub.jpg
+    - assets/bread.jpg
+    - assets/dispensary.jpg
+    - assets/paypal.png
+    - assets/vapepen.jpg
+    - assets/dis1.jpeg
+    - assets/dis2.jpeg
+    - assets/dis3.jpeg
+    - assets/medmen.png
+    - assets/mm.jpeg
+    - assets/sweetleaf.png
+    - assets/farma.jpg
+    - assets/boston.jpeg
+    - assets/chicago.jpeg
+    - assets/detroit.jpeg
+    - assets/jersey.jpeg
+    - assets/la.jpeg
+    - assets/ny.jpeg
+    - assets/philly.jpeg
+    - assets/portland.jpeg
+    - assets/sanfran.jpeg
+    - assets/seattle.jpeg
+    - assets/BuddiesLogo.mp4
+    - assets/buddies.png
+    - assets/smiley.png
+    - assets/buddies_white.png
+    - assets/driver.jpeg
+    - assets/orderpic.jpeg
+    - assets/delivered.jpeg
+    - assets/map.png
+    - assets/revel.jpeg
+    - assets/stripe.jpeg
+    - assets/spray.png
+    - assets/drops.png
+    - assets/blur.jpg
+    - assets/icons/apple.png
+    - assets/icons/coconut.jpeg
+    - assets/icons/grape.png
+    - assets/icons/grapefruit.png
+    - assets/icons/kiwi.png
+    - assets/cash.png
+    - assets/emptyCart.png
+    - assets/leaf.jpeg
+    - assets/carIcon.png
+    - assets/car2.png
+    - assets/smallsmiley.png
+    - assets/smileyResized.png
+    - assets/cbd.jpeg
+    - assets/concentrates.jpeg
+    - assets/edible.jpeg
+    - assets/smileyResized.png
+    - assets/preroll.jpeg
+    - assets/rig.jpeg  
+    - assets/pets.jpeg  
+    - assets/topicals.jpeg
+    - assets/pens.jpeg
+    - assets/googlePayLogo.png
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.io/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.io/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Bold.ttf
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Bold.ttf
+    - family: Roboto Regular
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+
+
+     
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.io/custom-fonts/#from-packages

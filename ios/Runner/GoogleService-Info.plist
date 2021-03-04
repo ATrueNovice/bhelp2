@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>810224248041-l3fes63ol4860oj9d4lb4j60ddstsl4e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.810224248041-l3fes63ol4860oj9d4lb4j60ddstsl4e</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>810224248041-g34keh8u4421uef8d84tlhl9go03mhc5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDM2wOdN-4TROpUqZE6nU1HQLjsEgJvkcw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>810224248041</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hscottindustries.bv3</string>
+	<key>PROJECT_ID</key>
+	<string>buddiesapp-222122</string>
+	<key>STORAGE_BUCKET</key>
+	<string>buddiesapp-222122.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:810224248041:ios:64db7ec8596e7fc02b7c78</string>
+	<key>DATABASE_URL</key>
+	<string>https://buddiesapp-222122.firebaseio.com</string>
+</dict>
+</plist>
